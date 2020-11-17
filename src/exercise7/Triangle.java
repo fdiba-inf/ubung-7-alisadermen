@@ -13,18 +13,20 @@ public class Triangle {
             printLine(1, line);
         }
 
-        for (int line = n-1; line > 0; line--){
+        for (int line = n - 1; line > 0; line--) {
             printLine(1, line);
         }
     }
 
     public static void printLine(int start, int end) {
-        for (int i = start; i <= end; i++){
-            System.out.print(i + " ");
-        if (i == end){
-            System.out.println();
+        for (int i = start; i <= end; i++) {
+            if (i == end) {
+                System.out.print(i);
+            } else {
+                System.out.print(i + " ");
+            }
         }
+            System.out.println();
 
         }
     }
-}
